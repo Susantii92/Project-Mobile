@@ -1,7 +1,8 @@
 # Project-Mobile
 # Deskripsi Aplikasi
-Tema           : Education
-Nama aplikasi  : Student Tracker
+1. Tema           : Education
+2. Nama aplikasi  : Student Tracker
+   
 Student Tracker merupakan aplikasi yang dirancang khusus untuk memudahkan pelacakan dan manajemen informasi mahasiswa yang memiliki matakuliah atau course yang berbeda di negara USA.  Memiliki antarmuka pengguna yang intuitif, Student Tracker menjadi alat yang esensial bagi institusi pendidikan atau dosen untuk mengelola data mahasiswa. Karena di dalam aplikasi Student Tracker terdapat informasi detail mengenai mahasiswa.
 
 # Fitur-fitur Aplikasi

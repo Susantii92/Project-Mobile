@@ -29,14 +29,6 @@ Student Tracker merupakan aplikasi yang dirancang khusus untuk memudahkan pelaca
    Untuk melihat informasi pribadi anda seperti username dan email, anda        dapat memilih menu profil di pojok kanan bawah.
 8. Logout
    Setelah selesai menggunakan aplikasi, Anda dapat keluar dengan aman.         Dihalaman Profile User terdapat tombol logout, anda dapat mengklik tombol    tersebut jika ingin keluar dari aplikasi.
-   
-# Implementasi Teknis
-1. Register dan Login\
-   Membuat layout untuk halaman register dan login,CardView untuk desain card serta terdapat font untuk mengatur tampilan judul. Tahap berikutnya implementasikan kode di        dalam loginActivity dan registerActivity untuk mengelola proses registrasi dan login. Saat pengguna mengisi formulir registrasi dan mengklik tombol "Register", data yang     dimasukkan akan disimpan menggunakan SharedPreferences. Kita akan menyimpan username dan email pengguna ke dalam SharedPreferences untuk digunakan di halaman profil.
-2. Home
-   HomeFragment bertanggung jawab untuk menampilkan daftar mahasiswa dalam bentuk RecyclerView, menyediakan SearchView untuk pencarian mahasiswa berdasarkan nama, dan menyertakan Toolbar untuk navigasi tambahan.
-3. Profile Mahasiswa
-   
 
 # Teknologi Yang Digunakan
 1. Android Studio

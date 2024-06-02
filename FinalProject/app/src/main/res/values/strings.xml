@@ -1,0 +1,8 @@
+<resources>
+    <string name="favorite_button_desc">Love Button</string>
+    <string name="back_button_desc">Back Button</string>
+
+    <string name="app_name">FinalProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

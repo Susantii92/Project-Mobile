@@ -30,6 +30,19 @@ Student Tracker merupakan aplikasi yang dirancang khusus untuk memudahkan pelaca
 8. Logout
    Setelah selesai menggunakan aplikasi, Anda dapat keluar dengan aman.         Dihalaman Profile User terdapat tombol logout, anda dapat mengklik tombol    tersebut jika ingin keluar dari aplikasi.
 
+# Implementasi Teknis
+1. Register dan Login\
+   Membuat layout untuk halaman register dan login,CardView untuk desain card serta terdapat font untuk mengatur tampilan judul. Tahap berikutnya implementasikan kode di        dalam loginActivity dan registerActivity untuk mengelola proses registrasi dan login. Saat pengguna mengisi formulir registrasi dan mengklik tombol "Register", data yang     dimasukkan akan disimpan menggunakan SharedPreferences. Kita akan menyimpan username dan email pengguna ke dalam SharedPreferences untuk digunakan di halaman profil.
+2. Home
+   HomeFragment bertanggung jawab untuk menampilkan daftar mahasiswa dalam bentuk RecyclerView, menyediakan SearchView untuk pencarian mahasiswa berdasarkan nama, terdapat Handler untuk mengatur progresBar dan menyertakan Toolbar untuk navigasi tambahan.
+3. Profile Mahasiswa
+   Pada ProfileActivity, instance tunggal dari UserDatabase diperoleh menggunakan getInstance untuk memastikan hanya ada satu instance database yang digunakan di seluruh aplikasi. UserDatabase dikonfigurasi dengan Room dan memiliki metode untuk mengambil pengguna saat ini. Entitas User mewakili tabel dalam database, profileActivity menampilkan informasi detail profil mahasiswa yang diambil dari database.
+4. Favorite
+   Menggunakan SQLite untuk menyimpan data yang dimasukkan ke dalam daftar favorite. Data yang disimpan dalam tabel favorite yaitu nama, email, gpa dan course.
+   Saat fragment dibuat (onCreateView), DatabaseHelper diinisialisasi dan digunakan untuk mengambil data favorit pengguna dari database. Data favorit dimuat dalam thread terpisah dan setelah data diambil, RecyclerView diperbarui untuk menampilkan daftar mahasiswa favorit.
+5. Profile User
+   Pada profile user, memanfaatkan SharedPreferences untuk menyimpan dan mengambil data pengguna, seperti username dan email, serta untuk mengelola status login pengguna. Saat fragment dibuat (onCreateView), data pengguna diambil dari SharedPreferences dan ditampilkan setelah penundaan singkat menggunakan Handler untuk memberikan efek loading. Tombol logout menghapus status login dari SharedPreferences dan mengarahkan pengguna kembali ke LoginActivity.
+
 # Teknologi Yang Digunakan
 1. Android Studio
 2. Retrofit
